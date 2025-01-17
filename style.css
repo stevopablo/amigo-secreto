@@ -115,6 +115,27 @@ button {
     cursor: pointer;
 }
 
+#button-clear{
+    /* padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-container{
+    display: flex;
+   gap: 20px;
+}
 .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
@@ -159,4 +180,61 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(240, 129, 2, 0.644);
+    transform: scale(1.1);
+   transition: transform 0.3s ease;
+}
+
+#button-clear:hover{
+    background-color: var(--color-button-hover);
+}
+#button-clear img{
+    margin-right: 40px;
+    width: 30px;
+}
+
+
+#button-clear:hover {
+     outline: none;
+     box-shadow: 0 0 0 3px rgba(240, 129, 2, 0.644); 
+     transform: scale(1.1);
+     transition: transform 0.3s ease;
+    }
+
+
+/* animando foto */
+.img-amigo-secreto {
+    width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+
+.img-amigo-secreto:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f6fafd;
+    animation: fadeInOut 3s infinite;
+}
+  /* Definindo a animação */
+@keyframes fadeInOut {
+    0% {
+     opacity: 0;
+    }
+    50% { opacity: 1;
+    }
+    100% { opacity: 0;
+    }
+}
+.main-title:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
